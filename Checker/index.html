@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha4-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    <body class="bg-info">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <h1>Checker</h1>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card border-info mb-3" >
+                    <div class="card-header">To-Do List</div>
+                    <div class="card-body text-info">
+                        <input type="text" placeholder="Add a task" id="todo" class="form-control" onKeyPress="enterpressalert(event, this)">
+                        <button onclick="addClicked()" style="float: right;" class="btn btn-info">+</button>
+                        <br><br><br>
+                        <ul id="todolist" class="list-group">
+                        </ul>
+                    </div>
+                  </div>
+        </div>
+        <div class="container">
+                <div class="card border-info mb-3" >
+                        <div class="card-header">Done <button style="float:right;" class="btn btn-info" onclick="clearall()">Clear</button></div>
+                        <div class="card-body text-info">
+                            <ul id="donelist" class="list-group">
+                            </ul>
+                        </div>
+                      </div>
+        </div>
+
+
+
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

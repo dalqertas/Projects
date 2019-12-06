@@ -1,0 +1,17 @@
+
+.container{
+    max-width: 700px;
+}
+h1{
+    text-align: center;
+    color:white;
+}
+li{
+    font-weight:bold;
+    text-decoration: "line-through";
+}
+.form-control{
+    float: left;
+    width:500px;
+}
+
